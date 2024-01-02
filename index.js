@@ -26,3 +26,19 @@ console.log(path.extname(__dirname));
 
 //4. parse method returns an object whose properties represent significant elements of the path
 console.log(path.parse(__filename));
+//5. format
+console.log(path.format(path.parse(__filename)));
+//isAbsolute
+console.log(path.isAbsolute(__filename));
+//Join
+console.log(path.join("Abiud", "Femi", "Mark"));
+console.log(path.join("/Abiud", "Femi", "Mark"));
+console.log(path.join("/Abiud", "//Femi", "Mark"));
+console.log(path.join("/Abiud", "//Femi", "../Mark"));
+console.log(path.join(__dirname, "data.json"));
+//Resolve
+console.log(path.resolve("Abiud", "Femi", "Mark"));
+console.log(path.resolve("/Abiud", "Femi", "Mark"));
+console.log(path.resolve("/Abiud", "//Femi", "Mark"));
+console.log(path.resolve("/Abiud", "//Femi", "../Mark"));
+console.log(path.resolve(__dirname, "data.json"));
